@@ -4,9 +4,9 @@
 Gong is based off of the classic arcade game 'Pong', with a twist: the louder you hit the gong (the closer the ball is to the center of your paddle), the more points you score. Players do not score points by hitting the ball behind the opponent's paddle; 'missing' a ball just results in a gain of 0 points. The loudest player, the one who scores the most points in 30 seconds, wins.
 
 ### Functionality & MVP
-With pong, users will be able to:
+With Gong, users will be able to:
 - [ ] Start, pause, and reset the game
-- [ ] Move their paddle up and down with the arrow keys
+- [ ] Move their gong up and down with the arrow keys
 - [ ] View the results (win or loss) along with their score after 30 seconds of gameplay
 
 In addition, this project will include:
