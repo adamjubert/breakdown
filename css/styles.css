@@ -7,8 +7,71 @@ body {
   margin: 0;
   padding: 20px 0 0 0 ;
   text-align: center;
+  background: #111;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  font-size: 20px;
+}
+
+p > a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+p > a:hover {
+  color: #ADD8E6;
+  transition: 0.5s;
+}
+
+.wrapper {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
 }
 
 canvas {
   border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.new-game {
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 500px;
+  height: 300px;
+
+}
+
+.btn {
+  color: white;
+  border-radius: 6px;
+  padding: 8px 6px;
+
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-new {
+  background: white;
+  color: black;
+  width: 80px;
+  margin: 0 auto;
+
+}
+
+.btn-new:hover {
+  background: #ddd;
 }
