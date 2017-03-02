@@ -62,11 +62,12 @@ canvas {
   color: white;
   border-radius: 6px;
   padding: 8px 6px;
-
+  transition: 0.4s;
 }
 
 .btn:hover {
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .btn-new {
@@ -79,4 +80,16 @@ canvas {
 
 .btn-new:hover {
   background: #ddd;
+}
+
+.extra-time-container {
+  position: absolute;
+  top: 0;
+  left: 400;
+  margin-left: 450px;
+  margin-top: -10px;
+}
+
+.extra-time-container p {
+  color: black;
 }
