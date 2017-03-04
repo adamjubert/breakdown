@@ -14,8 +14,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-  font-family: 'Audiowide', cursive, sans-serif;
+  font-family: 'Audiowide', sans-serif;
 	vertical-align: baseline;
+	text-transform: lowercase;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -43,25 +45,32 @@ body {
   color: white;
 }
 
-h1 {
+/*** Title ****/
+.header > h1 {
   color: white;
+	text-transform: lowercase;
+	margin-bottom: 14px;
+	font-size: 54px;
 }
 
-p {
+.header > p {
   font-size: 20px;
+	margin-bottom: 24px;
 }
 
-p > a {
+.header a {
   color: white;
   text-decoration: none;
   transition: 0.5s;
+	text-transform: capitalize;
 }
 
-p > a:hover {
-  color: #ADD8E6;
+.header a:hover {
+  color: #52C3FB;
   transition: 0.5s;
 }
 
+/*** Game ***/
 .wrapper {
   position: relative;
   width: 600px;
@@ -78,11 +87,31 @@ canvas {
 .alert-screen {
   position: absolute;
   top: 0;
-  margin-top: 30px;
-  margin-left: 150px;
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+}
 
+.high-score {
+	font-size: 20px;
+	height: 30px;
+	width: 40px;
+	margin: 10px auto 0;
+}
+
+.alert-screen h2 {
+	font-size: 36px;
+	margin-top: 20px;
+}
+
+.alert-screen ul {
+	text-align: left;
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.alert-screen ul li {
+	font-size: 18px;
+	margin: 10px 0;
 }
 
 .new-game > * {
@@ -95,7 +124,12 @@ canvas {
   height: 300px;
 }
 
+.game-over > * {
+	margin-top: 20px;
+}
+
 .btn {
+	margin-top: 20px;
   color: white;
   border-radius: 6px;
   padding: 8px 6px;
@@ -108,7 +142,7 @@ canvas {
   transition: 0.4s;
 }
 
-.btn-new {
+.btn-play {
   background: white;
   color: black;
   width: 80px;
@@ -116,8 +150,9 @@ canvas {
 
 }
 
-.btn-new:hover {
-  background: #ddd;
+.btn-play:hover {
+  background: #52C3FB;
+	transition: 0.4s;
 }
 
 .extra-time-container {
@@ -125,7 +160,6 @@ canvas {
   top: 0;
   left: 400;
   margin-left: 450px;
-  margin-top: -10px;
 }
 
 .extra-time-container p {

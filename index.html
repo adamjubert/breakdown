@@ -8,27 +8,28 @@
     <script src="lib/jquery-3.1.1.min.js"> </script>
   </head>
   <body>
-    <h1>Breakdown</h1>
-    <p>by <a href="http://adamjubert.com" target="_blank">Adam Jubert</a></p>
+    <div class="header">
+      <h1>Breakdown</h1>
+      <p>by <a href="http://adamjubert.com" target="_blank">Adam Jubert</a></p>
+    </div>
     <div class="wrapper">
       <canvas></canvas>
-      <div class="alert-screen"></div>
+      <div class="alert-screen">
+        <h2>High Score</h2>
+        <p class="high-score"></p>
+        <h2>Instructions</h2>
+        <ul>
+          <li>Arrow keys move paddle left/right</li>
+          <li>You lose when you run out of time</li>
+          <li>Unlimited lives</li>
+        </ul>
+        <div class='btn btn-play'>Play Game</div>
+      </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-database.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyC7aTjQHH9a9p1iQT96Xua837KJ4t2Aboc",
-        authDomain: "gong-34d06.firebaseapp.com",
-        databaseURL: "https://gong-34d06.firebaseio.com",
-        storageBucket: "gong-34d06.appspot.com",
-        messagingSenderId: "77466642516"
-      };
-      firebase.initializeApp(config);
-      var database = firebase.database();
-    </script>
+
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
