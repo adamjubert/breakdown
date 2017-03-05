@@ -51,7 +51,6 @@ body {
 
 /*** Title ****/
 .header > h1 {
-  color: white;
 	margin-bottom: 14px;
 	font-size: 54px;
 }
@@ -65,7 +64,6 @@ body {
   color: white;
   text-decoration: none;
   transition: 0.5s;
-	text-transform: capitalize;
 }
 
 .header a:hover {
@@ -79,10 +77,10 @@ body {
   width: 900px;
   height: 550px;
   margin: 0 auto;
+	border: 1px solid #52C3FB;
 }
 
 canvas {
-  border: 1px solid black;
   width: 100%;
   height: 100%;
 }
@@ -90,8 +88,8 @@ canvas {
 .alert-screen {
   position: absolute;
   top: 0;
-  width: 101%;
-  height: 101%;
+  width: 100%;
+  height: 100%;
 }
 
 .score {
@@ -101,10 +99,19 @@ canvas {
 	margin: 10px auto 0;
 }
 
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-center > div {
+	margin: 0 24px;
+}
+
 
 .alert-screen h2 {
 	font-size: 36px;
-	margin-top: 30px;
+	margin-top: 36px;
 }
 
 .alert-screen ul {
@@ -159,8 +166,7 @@ canvas {
   background: white;
   color: black;
   max-width: 160px;
-  margin: 20px auto 0;
-
+  margin: 30px auto 0;
 }
 
 .btn-play:hover {
@@ -177,4 +183,20 @@ canvas {
 
 .extra-time-container p {
   color: black;
+}
+
+.icons {
+	margin-top: 20px;
+}
+
+.icons a {
+	margin: 0 16px;
+	color: white;
+	font-size: 44px;
+	transition: 0.4s;
+}
+
+.icons a:hover {
+	color: #52C3FB;
+	transition: 0.4s;
 }
