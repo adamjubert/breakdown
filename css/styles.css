@@ -16,7 +16,6 @@ time, mark, audio, video {
 	border: 0;
   font-family: 'Audiowide', sans-serif;
 	vertical-align: baseline;
-	text-transform: lowercase;
 
 }
 /* HTML5 display-role reset for older browsers */
@@ -29,6 +28,11 @@ body {
 }
 ol, ul {
 	list-style: none;
+}
+
+h1, h2, .btn {
+	text-transform: uppercase;;
+
 }
 
 
@@ -48,7 +52,6 @@ body {
 /*** Title ****/
 .header > h1 {
   color: white;
-	text-transform: lowercase;
 	margin-bottom: 14px;
 	font-size: 54px;
 }
@@ -105,13 +108,19 @@ canvas {
 
 .alert-screen ul {
 	text-align: left;
-	max-width: 500px;
+	/*max-width: 500px;*/
 	margin: 10px auto;
+	text-align: center;
 }
 
 .alert-screen ul li {
 	font-size: 18px;
 	margin: 10px 0;
+}
+
+.alert-screen ul img {
+	width: 16px;
+	height: 16px;
 }
 
 .new-game > * {
