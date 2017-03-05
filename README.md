@@ -12,7 +12,7 @@ Users are able to:
 - [x] Toggle sounds on & off using 'Q'
 
 ### Gameplay
-![Gameplay Screenshot](img/screen_shot.png)
+
 Breakdown consists of a main menu displaying the global high score, controls, and power up information. After pressing ENTER, users immediately start the game.
 
 The game has two screens: 'Breakout' on the left and 'Pong' on the right. Players control the Breakout paddle with A & D keys, and the Pong paddle with Up & Down arrow keys. Players have 10 lives. Players score 1 point per brick broken and 5 points for every Pong goal scored.
@@ -21,7 +21,9 @@ When the Breakout ball hits a brick, there is a small chance that a Power Up wil
 
 When the player runs out of lives, they will be returned to the main menu where they can view their score next to the global high score.
 
-### Architecture and Technologies
+![Gameplay Screenshot](img/screen_shot.png)
+
+### Technologies
 HTML, CSS, JavaScript, jQuery, and Google Firebase
 
 ### Technical Details
