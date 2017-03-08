@@ -13,7 +13,7 @@ Users are able to:
 
 ### Gameplay
 
-![Gameplay GIF](img/gameplay.gif)
+![Gameplay GIF](img/gameplay1.gif)
 
 Breakdown consists of a main menu displaying the global high score, controls, and power up information. After pressing ENTER, users immediately start the game.
 
@@ -22,8 +22,6 @@ The game has two screens: 'Breakout' on the left and 'Pong' on the right. Player
 When the Breakout ball hits a brick, there is a small chance that a Power Up will appear. Players must catch the power up with the Breakout paddle in order to activate it.
 
 When the player runs out of lives, they will be returned to the main menu where they can view their score next to the global high score.
-
-![Gameplay Screenshot](img/screen_shot.png)
 
 ### Technologies
 HTML, CSS, JavaScript, jQuery, and Google Firebase
