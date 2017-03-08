@@ -85,6 +85,14 @@ canvas {
   height: 100%;
 }
 
+.plus-lives {
+	position: absolute;
+	top: 6px;
+	right: 140px;
+	font-size: 20px;
+	color: #52C3FB;
+}
+
 .alert-screen {
   position: absolute;
   top: 0;
