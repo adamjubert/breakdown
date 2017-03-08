@@ -15,36 +15,27 @@ Users are able to:
 
 ![Gameplay GIF](img/gameplay.gif)
 
-Breakdown consists of a main menu displaying the global high score, controls, and power up information. After pressing ENTER, users immediately start the game.
+Breakdown consists of two separate games: 'Breakout' on the left and 'Pong' on the right. Players control the Breakout paddle with A & D keys, and the Pong paddle with Up & Down arrow keys. Players have 10 lives; they can score 1 point per brick broken and 10 points for every Pong goal scored.
 
-The game has two screens: 'Breakout' on the left and 'Pong' on the right. Players control the Breakout paddle with A & D keys, and the Pong paddle with Up & Down arrow keys. Players have 10 lives. Players score 1 point per brick broken and 5 points for every Pong goal scored.
+When the Breakout ball hits a brick, there is a 1/10 chance that a Power Up will appear. Players must catch the power up with the Breakout paddle in order to activate it on both screens.
 
-When the Breakout ball hits a brick, there is a small chance that a Power Up will appear. Players must catch the power up with the Breakout paddle in order to activate it.
-
-When the player runs out of lives, they will be returned to the main menu where they can view their score next to the global high score.
-
-### Technologies
-HTML, CSS, JavaScript, jQuery, and Google Firebase
+When the player runs out of lives, they will be returned to the main menu where they can view their score along with the global high score.
 
 ### Technical Details
+The HTML5 Canvas API efficiently renders and updates gameplay and animations. Game logic was written in JavaScript and utilizes jQuery to append/remove the main menu, score count, lives count, and high score. All sound effects are played using JavaScript's native `Audio` class, and will not play if the game is muted.
 
-Promises were used to ensure power-ups only last 8 seconds.
-```     
-increasePaddleSize() {
-  new Promise(() => (
-    pongPaddle.height = Math.round( pongPaddle.height * 10/7)
-  )).then(setTimeout(() => (
-    pongPaddle.height = Math.round( pongPaddle.height * 7/10 )
-  ), 8000));
+```
+playAudio(src) {
+  let audio = new Audio(src);
+  if (!this.muted) { audio.play(); }
 }
 ```
 
-Firebase is used to set & retrieve the global high score.
+Google Firebase was used to seamlessly store and retrieve global high score data in the cloud.
 ```
-getHighScore(domClass) {
+getHighScore() {
   firebase.database().ref('/highScore').on('value', function(snapshot) {
     this.highScore = snapshot.val();
-    $(domClass).append(snapshot.val());
   }.bind(this));
 }
 
