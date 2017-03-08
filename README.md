@@ -13,7 +13,7 @@ Users are able to:
 
 ### Gameplay
 
-![Gameplay GIF](img/gameplay1.gif)
+![Gameplay GIF](img/gameplay.gif)
 
 Breakdown consists of a main menu displaying the global high score, controls, and power up information. After pressing ENTER, users immediately start the game.
 
